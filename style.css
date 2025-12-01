@@ -8,29 +8,65 @@ p, h1, h3, a{
   font-style: normal;
   color: white;
 }
-.title img{
-    position: static;
-    z-index: 1;
+
+.header{
+    position: fixed;
+    z-index: 100;
+
+    display:  flex;
+    justify-content: space-between;
+
     width: 100%;
+
+    top: 1%;
 }
 
-.title h1, p{
+.header h3
+{
+    font-size: 2vw;
+    width: auto;
+
+    margin-left: 1%;
+}
+
+.header nav
+{
+    display: flex;
+    width: 35%;
+}
+
+.header a
+{
+    font-size: 2vw;
+    margin-right: 3%;
+}
+
+.title
+{
     position: relative;
-    z-index: 2;
-}
-
-.title h1{
-    width: 37%;
-    font-size: 4vw;
     display: flex;
     align-items: center;
 }
 
-.title p{
-    display: flex;
-    align-self: flex-end;
+.title img{
+    position: relative;
+    z-index: 1;
+    width: 100%;
 }
 
+.title h1, .title p{
+    position: absolute;
+    z-index: 2;
+}
+
+.title h1{
+    width: 40%;
+    font-size: 6vw;
+    left: 10%;
+}
+
+
 .title p{
-    font-size: 1vw;
+    font-size: 1.5vw;
+    bottom: 0;
 }
