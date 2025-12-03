@@ -1,8 +1,10 @@
-body, h3, h1, p{
+body, h3, h1, p
+{
     margin: 0;
 }
 
-p, h1, h2, h3, a{
+p, h1, h2, h3, a
+{
   font-family: "Inria Serif", serif;
   font-weight: 400;
   font-style: normal;
@@ -11,7 +13,8 @@ p, h1, h2, h3, a{
   text-decoration: none;
 }
 
-.header{
+.header
+{
     position: fixed;
     z-index: 100;
 
@@ -57,39 +60,45 @@ p, h1, h2, h3, a{
     align-items: center;
 }
 
-.title img{
+.title img
+{
     position: relative;
     z-index: 1;
     width: 100%;
 }
 
-.title h1, .title p{
+.title h1, .title p
+{
     position: absolute;
     z-index: 2;
 }
 
-.title h1{
+.title h1
+{
     width: 40%;
     font-size: 6vw;
     left: 10%;
 }
 
 
-.title p{
+.title p
+{
     font-size: 1.5vw;
     bottom: 0;
 
     margin-left: 5%;
 }
 
-.new-release{
+.new-release
+{
     background-color: #2A0065;
     width: 100%;;
 
     display: flex;
 }
 
-.single, .album, .shows, .tour{
+.single, .album, .shows, .tour
+{
     width: 100%;
 
     display: flex;
@@ -98,22 +107,26 @@ p, h1, h2, h3, a{
 
 }
 
-.single a, .album a, .shows a, .tour a{
+.single a, .album a, .shows a, .tour a
+{
     width: 30%;
 
     margin-top: 6%;
     margin-bottom: 6%;
 }
 
-.single img, .album img, .shows img, .tour img{
+.single img, .album img, .shows img, .tour img
+{
     width: 100%;
 }
 
-.single img:hover{
+.single img:hover
+{
     transform: scale(105%);
 }
 
-.single h2, .album h2, .shows h2, .tour h2{
+.single h2, .album h2, .shows h2, .tour h2
+{
     font-size: 4vw;
     text-align: center;
 
@@ -122,7 +135,8 @@ p, h1, h2, h3, a{
     margin-bottom: 5%;
 }
 
-.merch-shop{
+.merch-shop
+{
     width: 100%;
     background-color: #8C6CAB;
 
@@ -131,14 +145,16 @@ p, h1, h2, h3, a{
     align-items: center;
 }
 
-.merch-shop h2{
+.merch-shop h2
+{
     margin-top: 0;
     padding-top: 4%;
     
     text-align: center;
 }
 
-.merch-shop a{
+.merch-shop a
+{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,23 +169,27 @@ p, h1, h2, h3, a{
     font-size: 3vw;
 }
 
-.merch-shop a:hover{
+.merch-shop a:hover
+{
     transform: scale(105%);
 }
 
-.merch-images img{
+.merch-images img
+{
     /* uses vw as % does not work so viewport works better*/
     height: 28vw;
     margin: 1%;
 }
 
-.merch-images img:hover{
+.merch-images img:hover
+{
     /*Seems like transform scale does not push other objects away so it works*/
     transform: scale(105%);
     margin: 1%;
 }
 
-.merch-images{
+.merch-images
+{
     width:95%;
     
     display: inline-block;
@@ -178,7 +198,8 @@ p, h1, h2, h3, a{
     margin: 2%;
 }
 
-.footer{
+.footer
+{
     width: 100%;
 
     background-color: #23056E;
@@ -188,7 +209,8 @@ p, h1, h2, h3, a{
     align-items: center;
 }
 
-.terms-and-service{
+.terms-and-service
+{
     width: 100%;
 
     text-align: center;
@@ -196,14 +218,16 @@ p, h1, h2, h3, a{
     margin: 2%;
 }
 
-.footer strong{
+.footer strong
+{
     font-size: 2vw;
 
     margin-left: 2%;
     margin-right: 2%;
 }
 
-.footer .social-platforms{
+.footer .social-platforms
+{
     display: flex;
 
     width: 25%;
@@ -211,15 +235,18 @@ p, h1, h2, h3, a{
     margin-bottom: 4%;
 }
 
-.footer img{
+.footer img
+{
     width: 50%;
 }
 
-.footer img:hover{
+.footer img:hover
+{
     transform: scale(105%);
 }
 
-@media screen and (min-width: 572px) {
+@media screen and (min-width: 572px) 
+{
     .single
     {
         flex-direction: row-reverse;
