@@ -152,18 +152,20 @@ p, h1, h2, h3, a{
 }
 
 .merch-images img{
+    /* uses vw as % does not work so viewport works better*/
     height: 28vw;
     margin: 1%;
 }
 
 .merch-images img:hover{
+    /*Seems like transform scale does not push other objects away so it works*/
     transform: scale(105%);
     margin: 1%;
 }
 
 .merch-images{
     width:95%;
-
+    
     display: inline-block;
     text-align: center;
 
