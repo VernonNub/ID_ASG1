@@ -1,3 +1,4 @@
+/* General CSS */
 body, h3, h1, p
 {
     margin: 0;
@@ -13,6 +14,7 @@ p, h1, h2, h3, a
   text-decoration: none;
 }
 
+/*Header CSS*/
 .header
 {
     position: fixed;
@@ -53,6 +55,7 @@ p, h1, h2, h3, a
     color: #C78FFF;
 }
 
+/*Body CSS*/
 .albums
 {
     background-color: #2b0353;
@@ -92,4 +95,52 @@ p, h1, h2, h3, a
 {
     text-align: center;
     font-size: 4vw;
+}
+
+/* footer CSS */
+.footer
+{
+    width: 100%;
+
+    background-color: #23056E;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terms-and-service
+{
+    width: 100%;
+
+    text-align: center;
+
+    margin: 2%;
+}
+
+.footer strong
+{
+    font-size: 2vw;
+
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.footer .social-platforms
+{
+    display: flex;
+
+    width: 25%;
+
+    margin-bottom: 4%;
+}
+
+.footer img
+{
+    width: 50%;
+}
+
+.footer img:hover
+{
+    transform: scale(105%);
 }

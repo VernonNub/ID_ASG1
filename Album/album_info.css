@@ -1,3 +1,4 @@
+/* General CSS */
 body, h3, h1, p
 {
     margin: 0;
@@ -13,6 +14,7 @@ p, h1, h2, h3, a
   text-decoration: none;
 }
 
+/*Header CSS*/
 .header
 {
     position: fixed;
@@ -53,10 +55,11 @@ p, h1, h2, h3, a
     color: #C78FFF;
 }
 
+/*Body CSS*/
 .main-content
 {
     width: 100%;
-    background-color: #9f7326;
+    background-color: #000000;
     
     padding-top: 12%;
 
@@ -113,7 +116,7 @@ p, h1, h2, h3, a
 #stream-title
 {
     font-size: 4vw;
-    margin-bottom: 3vw;
+    margin: 3vw;
 }
 
 .stream-content
@@ -145,11 +148,69 @@ p, h1, h2, h3, a
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
 
-    background-color: rgb(28, 0, 38);
+    background-color: black;
     border-radius: 0.5vw;
+}
+
+.embedded-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 iframe
 {
-    margin-top: 2vw;
+    width: 87vw;
+    height: 45vw;
+
+    margin: 2vw;
+}
+
+/* footer CSS */
+.footer
+{
+    width: 100%;
+
+    background-color: #23056E;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terms-and-service
+{
+    width: 100%;
+
+    text-align: center;
+
+    margin: 2%;
+}
+
+.footer strong
+{
+    font-size: 2vw;
+
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.footer .social-platforms
+{
+    display: flex;
+
+    width: 25%;
+
+    margin-bottom: 4%;
+}
+
+.footer img
+{
+    width: 50%;
+}
+
+.footer img:hover
+{
+    transform: scale(105%);
 }
