@@ -1,4 +1,3 @@
-var lilac = document.getElementById("lilac");
 var albumList = document.getElementsByClassName("album")
 
 for (let i = 0; i < albumList.length; i++)

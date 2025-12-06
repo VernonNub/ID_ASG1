@@ -40,8 +40,6 @@ p, h1, h2, h3, a
 {
     display: flex;
     width: 35%;
-
-    margin-right: 7%;
 }
 
 .header a
