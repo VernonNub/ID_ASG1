@@ -128,11 +128,6 @@ p, h1, h2, h3, a
     width: 100%;
 }
 
-.single img:hover, .album img:hover, .shows img:hover
-{
-    transform: scale(105%);
-}
-
 .single h2, .album h2, .shows h2
 {
     font-size: 4vw;
@@ -182,21 +177,21 @@ p, h1, h2, h3, a
     transform: scale(105%);
 }
 
-.merch-images img
+.home-merch-images img
 {
     /* uses vw as % does not work so viewport works better*/
     height: 28vw;
     margin: 1%;
 }
 
-.merch-images img:hover
+.home-merch-images img:hover
 {
     /*Seems like transform scale does not push other objects away so it works*/
     transform: scale(105%);
     margin: 1%;
 }
 
-.merch-images
+.home-merch-images
 {
     width:95%;
     
@@ -216,7 +211,7 @@ p, h1, h2, h3, a
     justify-content: center;
 }
 
-form
+#newsletter
 {
     width: 100%;
 
@@ -278,7 +273,7 @@ form
     color: rgb(246, 195, 255);
 }
 
-#submit-button
+#newsletter-submit-button
 {
     margin-top: 50vw;
 
@@ -292,6 +287,592 @@ form
     background-color: #ecdaff;
 
     border:none;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+/*Album Page*/
+
+.album-page-albums
+{
+    background-color: #2b0353;
+    width: 100%;
+
+    height: 125vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: flex-end;
+}
+
+.album-page-album-list, .album-page-new-releases
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    width:80%;
+
+    justify-content: center;
+}
+
+.album-page-albums img
+{
+    height: 24vw;
+    margin: 1vw;
+}
+
+.album-page-albums img:hover
+{
+    transform: scale(105%);
+}
+
+#title-new-releases, #title-albums
+{
+    text-align: center;
+    font-size: 4vw;
+}
+
+/*Album Info Page */
+.main-content
+{
+    width: 100%;
+    background-color: #000000;
+    
+    padding-top: 12%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-and-image
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.title-and-image img
+{
+    height: 30vw;
+
+    margin: 3vw;
+}
+
+.title-and-image h1
+{
+    width:50vw;
+    font-size: 7vw;
+}
+
+.title-and-image h2
+{
+    width:40vw;
+    font-size: 3vw;
+
+    margin: 0;
+    margin-top: 2vw;
+}
+
+.title-and-image p{
+    width: 50vw;
+    font-size: 1.6vw;
+
+    margin-top: 2vw;
+}
+
+.streaming-service
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#stream-title
+{
+    font-size: 4vw;
+    margin: 3vw;
+}
+
+.stream-content
+{
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.streaming-service img
+{
+    width: 2.4vw;
+
+    margin-right: 0.5vw;
+}
+
+.streaming-service a
+{
+    width: 15vw;
+    height: 5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+
+    background-color: black;
+    border-radius: 0.5vw;
+}
+
+.embedded-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe
+{
+    width: 87vw;
+    height: 45vw;
+
+    margin: 2vw;
+}
+
+/* Merch Page */
+.header
+{
+    position: fixed;
+    z-index: 100;
+
+    display:  flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-top: 3%;
+}
+
+.header h3
+{
+    font-size: 2vw;
+    width: auto;
+
+    margin-left: 4%;
+}
+
+.header nav
+{
+    display: flex;
+    width: 35%;
+
+    margin-right: 7%;
+}
+
+.header a
+{
+    font-size: 2vw;
+    margin-right: 6%;
+}
+
+.header a:hover
+{
+    color: #C78FFF;
+}
+
+#shopping-cart img
+{
+    width: 2vw;
+
+    margin-right: 0.4vw;
+}
+
+#shopping-cart
+{
+    display: flex;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#shopping-cart:hover
+{
+    transform: scale(105%);
+}
+
+/*Body CSS*/
+.shop-section
+{
+width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #ecd8ff;
+}
+
+.title-and-filters
+{
+    padding-top: 6vw;
+}
+
+#merch-banner
+{
+    padding-top: 4vw;
+
+    width: 100%;
+
+    background-color: #ebe7db;
+}
+
+.merch-images
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.merch-images a
+{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1vw;
+    margin-bottom: 2vw;
+
+    color: black
+}
+
+.merch-images a:hover
+{
+    transform: scale(105%);
+}
+
+.merch-images img, .merch-images h2, .merch-images a
+{
+    width: 40vw;
+
+    text-align: center;
+
+    color: black
+}
+
+@media screen and (min-width: 1080px)
+{
+    .merch-images img, .merch-images h2, .merch-images a
+    {
+        width: 22vw;
+    }
+}
+
+/*Merch Details */
+.shop-section
+{
+width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #ecd8ff;
+}
+
+#merch-banner
+{
+    padding-top: 4vw;
+
+    width: 100%;
+
+    background-color: #ebe7db;
+}
+
+.merch-details
+{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.merch-details img
+{
+    height: 40vw;
+
+    padding: 3vw
+}
+
+.description
+{
+    width: 30vw;
+    padding-top: 3vw;
+}
+
+.description h1
+{
+    font-size: 4vw;
+
+    color: black;
+}
+
+.description h2
+{
+    font-size: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    color: black;
+}
+
+#information
+{
+    font-size: 1.5vw;
+
+    color: black;
+}
+
+#merch-details-amount
+{
+    border: none;
+}
+
+#quantity
+{
+    margin-top: 2vw;
+
+    display: flex;
+}
+
+input
+{
+    text-align: center;
+
+    width: 5vw;
+    height: 4.9vw;
+
+    font-size: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#quantity button
+{
+    width: 5vw;
+    height: 5vw;
+
+    font-size: 2.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    text-align: center;
+}
+
+#quantity button:hover
+{
+    transform: scale(105%);
+}
+
+#add-to-cart
+{
+    width: 100%;
+    height: 4vw;
+    margin: 2vw;
+    margin-left: 0;
+
+    background-color: #4e3468;
+
+    font-size: 2vw;
+
+    color: white;
+}
+
+/*Cart page */
+.cart-section
+{
+width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #ecd8ff;
+}
+
+.title-and-filters
+{
+    padding-top: 6vw;
+    
+}
+
+.title-and-filters h1
+{
+    color: black;
+}
+
+#cart-banner
+{
+    padding-top: 4vw;
+
+    width: 100%;
+
+    background-color: #ebe7db;
+}
+
+.cart-section
+{
+    width: 100%;
+}
+
+.cart-item
+{
+    width: 100%;
+    display: flex;
+
+    margin: 2vw;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+#item-image
+{
+    height: 15vw;
+}
+
+#item-title
+{
+    font-size: 3vw;
+    color: black;
+}
+
+#item-price
+{
+    font-size: 2vw;
+    color: black;
+}
+
+#quantity
+{
+    margin-top: 2vw;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.amount
+{
+    text-align: center;
+
+    width: 5vw;
+    height: 4.6vw;
+
+    border: none;
+    background-color: transparent;
+
+    font-size: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#quantity button
+{
+    width: 5vw;
+    height: 5vw;
+
+    font-size: 2.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    text-align: center;
+
+    background-color: #9c81b8;
+    border: none;
+}
+
+#quantity button:hover
+{
+    transform: scale(105%);
+}
+
+form input
+{
+    background-color: transparent;
+
+    border: none;
+
+    border-bottom: 0.01vw solid black;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email, #card-number
+{
+    width: 90vw;
+
+    font-size: 3vw;
+    height: 4vw;
+}
+
+#postal-code, #unit-number, #expiry, #cvv
+{
+    width: 44.7vw;
+    font-size: 3vw;
+
+    height: 4vw;
+}
+
+#purchase-button
+{
+    background-color: #9c81b8;
+    
+    height: 5vw;
+    width: 50vw;
+    border: none;
+
+    border-radius: 2vw;
+
+    margin: 2vw;
+
+    font-size: 2vw;
+}
+
+#total-price-title
+{
+    color:black;
+
+    margin: 1vw;
+    font-size: 4vw;
 }
 
 /* footer CSS */

@@ -1,4 +1,4 @@
-var albumList = document.getElementsByClassName("album")
+var albumList = document.getElementsByClassName("album-page-album")
 
 for (let i = 0; i < albumList.length; i++)
 {
