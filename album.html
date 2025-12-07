@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width">
-        <title>Uaena Home Page</title>
+        <title>Uaena Albums</title>
         <link type="text/css" rel="stylesheet" href="../normalize.css">
         <link rel="stylesheet" href="../home.css">
+        
 
         <!-- Irina Serif font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,40 +23,27 @@
                 <a href="../album/album.html">Albums</a>
                 <a href="../shows/shows.html">Shows</a>
                 <a href="../merch/merch.html">Merch</a>
-                <a id="shopping-cart" href="cart.html"><img src="../media/logos/logo_shoppingcart.png" alt="Shopping Cart Logo"><span id="cart-amount">0</span></a>
             </nav>
         </div>
 
-        <!--Main Page-->
-        <div class="cart-section">
-            <img src="../Media/Merch_Store_BG.jpg" id="cart-banner">
-            <div class="title-and-filters">
-                <h1>My Cart</h1>
-            </div>
-
-            <div id="cart-section">
-                <div id="cart-catalogue">
-                </div>
-                <h1 id="total-price-title">Total Price: </h1>
-                <div id="payment-details">
-                    <form id="payment">
-                        <div id="personal-information">
-                            <input id="email" type="email" placeholder="Email" required>
-                            <div id="address">
-                                <input id="postal-code" type="number" placeholder="Postal-Code" required>
-                                <input id="unit-number" type="text" placeholder="Unit-Number" required>
-                            </div>
-                        </div>
-                        <div id="card-information">
-                            <input type="number" id="card-number" placeholder="Card Number" required>
-                            <div id="cvv-and-expiry">
-                                <input id="expiry" type="date" placeholder="Expiry Date" required>
-                                <input id="cvv" type="number" placeholder="CVV" required>
-                            </div>
-                        </div>
-                        <button id="purchase-button" type="button">Purchase</button>
-                    </form>
-                </div>
+        <!--Body-->
+        <div class="album-page-albums">
+            <h1 id="title-new-releases">New Releases</h1>
+            <div class="album-page-new-releases">
+                    <a href="album_info.html" class="album-page-album" id="a-flower3"><img src="../media/album/2025_may27_album_a_flower_bookmark_3.jpg" alt="A Flower Bookmark 3 Album"></a>
+                    <a href="album_info.html" class="album-page-album" id="the-winning"><img src="../media/album/2024_feb20_album_the_winning.png" alt="The Winning Album"></a>
+                    <a href="album_info.html" class="album-page-album" id="lilac"><img src="../media/album/2021_mar25_album_lilac.png" alt="Lilac Album"></a>
+            </div> 
+            <h1 id="title-albums">Albums</h1> 
+            <div class="album-page-album-list">
+                <a href="album_info.html" class="album-page-album" id="pieces"><img src="../media/album/2021_dec29_album_pieces.jpeg" alt="Pieces Album"></a>
+                <a href="album_info.html" class="album-page-album" id="love-poem"><img src="../media/album/2019_nov18_album_love_poem.png" alt="Love Poem Album"></a>
+                <a href="album_info.html" class="album-page-album" id="a-flower2"><img src="../media/album/2017_sep22_album_a_flower_bookmark_2.jpg" alt="A Flower Bookmark 2 Album"></a>
+                <a href="album_info.html" class="album-page-album" id="palette"><img src="../media/album/2017_apr21_album_palette.jpg" alt="Palette Album"></a>
+                <a href="album_info.html" class="album-page-album" id="chat-shire"><img src="../media/album/2015_oct23_album_chat-shire.jpg" alt="Chat-Shire Album"></a>     
+                <a href="album_info.html" class="album-page-album" id="a-flower1"><img src="../media/album/2014_may16_album_a_flower_bookmark_1.jpg" alt="A Flower Bookmark 1 Album"></a>
+                <a href="album_info.html" class="album-page-album" id="last-fantasy"><img src="../media/album/2011_nov29_album_last_fantasy_2.jpg" alt="Last Fantasy Album"></a>
+                <a href="album_info.html" class="album-page-album" id="real"><img src="../media/album/2010_dec9_album_real.png" alt="Real Album"></a>
             </div>
         </div>
 
@@ -86,5 +74,5 @@
             </div>
         </div>
     </body>
-    <script src="cart.js"></script>
+    <script src="../album.js" type="module"></script>
 </html>

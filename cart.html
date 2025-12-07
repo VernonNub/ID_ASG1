@@ -3,10 +3,9 @@
     <head>
         <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width">
-        <title>Uaena Albums</title>
+        <title>Uaena Home Page</title>
         <link type="text/css" rel="stylesheet" href="../normalize.css">
         <link rel="stylesheet" href="../home.css">
-        
 
         <!-- Irina Serif font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,37 +22,44 @@
                 <a href="../album/album.html">Albums</a>
                 <a href="../shows/shows.html">Shows</a>
                 <a href="../merch/merch.html">Merch</a>
+                <a id="shopping-cart" href="cart.html"><img src="../media/logos/logo_shoppingcart.png" alt="Shopping Cart Logo"><span id="cart-amount">0</span></a>
             </nav>
         </div>
 
-        <!--Body-->
-        <div class="main-content">
-            <div class="title-and-image">
-                <div class="titles">
-                    <h1 id="album-title"></h1>
-                    <h2 id="album-subtitle"></h2>
-                    <p id="album-description"></p>
-                </div>    
-                <img id="album-cover" src="">
+        <!--Main Page-->
+        <div class="cart-section">
+            <img src="../Media/Merch_Store_BG.jpg" id="cart-banner">
+            <div class="title-and-filters">
+                <h1>My Cart</h1>
             </div>
-            <div class="streaming-service">
-                <div class="stream-header">
-                    <h1 id="stream-title">Stream Now!</h1>
+
+            <div id="cart-section">
+                <div id="cart-catalogue">
                 </div>
-                <div class="stream-content">
-                    <a id="album-youtube-link" href="" target="_blank"><img src="../media/logos/logo_youtube.png" alt="Youtube Logo">Youtube</a>
-                    <a id="album-spotify-link" href="" target="_blank"><img src="../Media/logos/logo_youtube.png" alt="Youtube Logo">Youtube</a>
-                    <a id="album-apple-link" href="" target="_blank"><img src="../Media/logos/logo_youtube.png" alt="Youtube Logo">Youtube</a>
-                </div>
-                <div class="embedded-content">
-                    <iframe id="album-spotify-embbed" data-testid="embed-iframe" style="border-radius:12px" src="" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    <iframe id="album-youtube-embbed" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe id="album-apple-embbed" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" style="overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src=""></iframe>
+                <h1 id="total-price-title">Total Price: </h1>
+                <div id="payment-details">
+                    <form id="payment">
+                        <div id="personal-information">
+                            <input id="email" type="email" placeholder="Email" required>
+                            <div id="address">
+                                <input id="postal-code" type="number" placeholder="Postal-Code" required>
+                                <input id="unit-number" type="text" placeholder="Unit-Number" required>
+                            </div>
+                        </div>
+                        <div id="card-information">
+                            <input type="number" id="card-number" placeholder="Card Number" required>
+                            <div id="cvv-and-expiry">
+                                <input id="expiry" type="date" placeholder="Expiry Date" required>
+                                <input id="cvv" type="number" placeholder="CVV" required>
+                            </div>
+                        </div>
+                        <button id="purchase-button" type="button">Purchase</button>
+                    </form>
                 </div>
             </div>
         </div>
-        
-                <!--Footer-->
+
+        <!--Footer-->
         <div class="footer">
             <div class="terms-and-service">
                 <a class="terms"><strong>Terms</strong></a>
@@ -80,5 +86,5 @@
             </div>
         </div>
     </body>
-    <script src="album_info.js" type="module"></script>
+    <script src="../cart.js"></script>
 </html>

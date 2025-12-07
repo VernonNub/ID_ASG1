@@ -27,27 +27,33 @@
         </div>
 
         <!--Body-->
-        <div class="album-page-albums">
-            <h1 id="title-new-releases">New Releases</h1>
-            <div class="album-page-new-releases">
-                    <a href="album_info.html" class="album-page-album" id="a-flower3"><img src="../media/album/2025_may27_album_a_flower_bookmark_3.jpg" alt="A Flower Bookmark 3 Album"></a>
-                    <a href="album_info.html" class="album-page-album" id="the-winning"><img src="../media/album/2024_feb20_album_the_winning.png" alt="The Winning Album"></a>
-                    <a href="album_info.html" class="album-page-album" id="lilac"><img src="../media/album/2021_mar25_album_lilac.png" alt="Lilac Album"></a>
-            </div> 
-            <h1 id="title-albums">Albums</h1> 
-            <div class="album-page-album-list">
-                <a href="album_info.html" class="album-page-album" id="pieces"><img src="../media/album/2021_dec29_album_pieces.jpeg" alt="Pieces Album"></a>
-                <a href="album_info.html" class="album-page-album" id="love-poem"><img src="../media/album/2019_nov18_album_love_poem.png" alt="Love Poem Album"></a>
-                <a href="album_info.html" class="album-page-album" id="a-flower2"><img src="../media/album/2017_sep22_album_a_flower_bookmark_2.jpg" alt="A Flower Bookmark 2 Album"></a>
-                <a href="album_info.html" class="album-page-album" id="palette"><img src="../media/album/2017_apr21_album_palette.jpg" alt="Palette Album"></a>
-                <a href="album_info.html" class="album-page-album" id="chat-shire"><img src="../media/album/2015_oct23_album_chat-shire.jpg" alt="Chat-Shire Album"></a>     
-                <a href="album_info.html" class="album-page-album" id="a-flower1"><img src="../media/album/2014_may16_album_a_flower_bookmark_1.jpg" alt="A Flower Bookmark 1 Album"></a>
-                <a href="album_info.html" class="album-page-album" id="last-fantasy"><img src="../media/album/2011_nov29_album_last_fantasy_2.jpg" alt="Last Fantasy Album"></a>
-                <a href="album_info.html" class="album-page-album" id="real"><img src="../media/album/2010_dec9_album_real.png" alt="Real Album"></a>
+        <div class="main-content">
+            <div class="title-and-image">
+                <div class="titles">
+                    <h1 id="album-title"></h1>
+                    <h2 id="album-subtitle"></h2>
+                    <p id="album-description"></p>
+                </div>    
+                <img id="album-cover" src="">
+            </div>
+            <div class="streaming-service">
+                <div class="stream-header">
+                    <h1 id="stream-title">Stream Now!</h1>
+                </div>
+                <div class="stream-content">
+                    <a id="album-youtube-link" href="" target="_blank"><img src="../media/logos/logo_youtube.png" alt="Youtube Logo">Youtube</a>
+                    <a id="album-spotify-link" href="" target="_blank"><img src="../Media/logos/logo_youtube.png" alt="Youtube Logo">Youtube</a>
+                    <a id="album-apple-link" href="" target="_blank"><img src="../Media/logos/logo_youtube.png" alt="Youtube Logo">Youtube</a>
+                </div>
+                <div class="embedded-content">
+                    <iframe id="album-spotify-embbed" data-testid="embed-iframe" style="border-radius:12px" src="" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe id="album-youtube-embbed" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe id="album-apple-embbed" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" style="overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src=""></iframe>
+                </div>
             </div>
         </div>
-
-        <!--Footer-->
+        
+                <!--Footer-->
         <div class="footer">
             <div class="terms-and-service">
                 <a class="terms"><strong>Terms</strong></a>
@@ -74,5 +80,5 @@
             </div>
         </div>
     </body>
-    <script src="album.js" type="module"></script>
+    <script src="../album_info.js" type="module"></script>
 </html>
