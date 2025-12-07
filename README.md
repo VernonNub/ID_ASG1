@@ -8,17 +8,16 @@ Fans and the public can also buy IU merch at the merch page and the home page wi
 
 
 ## Design Process
- 
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+My design process is simple, to solve user stories based on what i think can most effectively solve it.
 
+- As IU fans, they want to be able to discover and buy her merch, so that they can display their love for IU. 
+  - Therefore, our quick and simple merch shop which is also intuitive allows them to purchase their merch from IU officially
+- As IU fans, they want to keep up to date with new IU releases so that they can continue to enjoy her music and merchs. 
+  - Therefore, we provide a way for them to sign up to receive updates from IU herself. Furthermore, out page has a new release section for fans to discover new release quickly!
+- As a general public, they want to discover IU, what her albums are and what are these albums about. 
+  - Therefore, we have customised pages for each album giving a brief description of them. Furthermore, these public can use the embedded video to play a short snippet of the songs which they can then click on the link to navigate to the appropriate streaming platforms.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process.
-These files should themselves either be included as a pdf file in the project itself (in a separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url.
+wirefram link: https://www.figma.com/design/hR9biYfeFxgM61uvhacsFP/ID_ASG1_WireFrame?node-id=0-1&t=aVUK8buodENbovgC-1
 
 
 ## Features
@@ -86,6 +85,9 @@ Most css size used in this website's scale of viewport so the website looks rath
   - https://en.wikipedia.org/wiki/A_Flower_Bookmark_3
   - https://en.wikipedia.org/wiki/The_Winning
   - https://en.wikipedia.org/wiki/Lilac_(IU_album)
+  - https://en.wikipedia.org/wiki/Love_Poem_(EP)
+  - https://en.wikipedia.org/wiki/A_Flower_Bookmark_2
+  - https://en.wikipedia.org/wiki/Palette_(album)
 - All purchase info is taken from the following link
   - https://krmerchs.com/collections/iu?srsltid=AfmBOop2521H26xlGcgFreXq5J9fS9VGBrlpuihqV4-JunIdXJDGnGmM
 
