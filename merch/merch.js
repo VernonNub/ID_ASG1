@@ -1,3 +1,4 @@
+//Loading of cart amount for header
 var shopItems = document.getElementsByClassName("merch")
 var cartAmount = document.getElementById("cart-amount");
 var cart = JSON.parse(localStorage.getItem("cart"));
@@ -11,7 +12,7 @@ for (let i = 0; i < shopItems.length; i++)
     } ,false)
 }
 
-
+//Saving the chosen merch to load in merch details
 function ChooseMerch(num)
 {
     console.log(num)
@@ -27,6 +28,7 @@ function ChooseMerch(num)
 
 UpdateShoppingCart()
 
+//Loading of cart amount for header
 function UpdateShoppingCart()
 {
     var cartSize = 0;

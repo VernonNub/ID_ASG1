@@ -37,6 +37,7 @@ const merchDetails =
     }
 }
 
+//Collecting the merch to load
 var merch2Load = localStorage.getItem("chosenMerch");
 
 //Loading of Page
@@ -62,13 +63,14 @@ LoadAlbumInformation(merch2Load)
 
 
 //Adding to cart code
+//Tags
 var reduceButton = document.getElementById("reduce-quantity");
 var increaseButton = document.getElementById("increase-quantity");
 var quantity = document.getElementById("merch-details-amount");
 var submit = document.getElementById("add-to-cart");
 
+//Loading cart amount on header
 var cartAmount = document.getElementById("cart-amount")
-
 var cart = JSON.parse(localStorage.getItem("cart"));
 
 if(cart == null)
@@ -76,9 +78,9 @@ if(cart == null)
     cart = new Object();
 }
 
-console.log(cart)
 UpdateShoppingCart()
 
+//Adding listeners to buttons
 reduceButton.addEventListener("click", function()
 {
     changeQuantity(-1);
@@ -91,8 +93,10 @@ increaseButton.addEventListener("click", function()
 
 submit.addEventListener("click", AddItemsToCart, false)
 
+//Since the starting amount is 1, disabled so cant go to 0
 reduceButton.disabled = true;
 
+//Changes quantity whne user increase or decrease quantity using the +/- buttons
 function changeQuantity(num)
 {
     quantity.value = Number(quantity.value) + Number(num);
@@ -107,6 +111,7 @@ function changeQuantity(num)
     }
 }
 
+//Adding to local variable cart then saving in local storage for other js to access
 function AddItemsToCart()
 {
 

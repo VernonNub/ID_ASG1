@@ -37,18 +37,20 @@ const merchDetails =
     }
 }
 
-//Adding to cart code
+//To edit cart amount on top
 var cartAmount = document.getElementById("cart-amount");
-
 var cart = JSON.parse(localStorage.getItem("cart"));
 
+//cart catalogue to create items
 var cartCatalogue = document.getElementById("cart-catalogue");
 
+//tag to display price
 var priceTag = document.getElementById("total-price-title")
 
-//Loading each item in cart
+//function to load each item in cart
 function loadItem(merchName)
 {
+    //Creating the tag for each item in cart
     const itemDiv = document.createElement('div');
     itemDiv.setAttribute('class', "cart-item");
 
@@ -104,6 +106,7 @@ function loadItem(merchName)
     cartCatalogue.appendChild(itemDiv);
 }
 
+//Creating the display for each item found
 for (const merch in cart)
 {
     console.log(cart)
@@ -118,6 +121,7 @@ if(cart == null)
 UpdateShoppingCart()
 UpdatePrice()
 
+//Update the quantity when user removes or add more to cart
 function changeQuantity(num, merchName)
 {
     cart[merchName] = Number(cart[merchName]) + Number(num);
@@ -139,6 +143,7 @@ function changeQuantity(num, merchName)
     UpdatePrice()
 }
 
+//Updates header card amount
 function UpdateShoppingCart()
 {
     var cartSize = 0;
@@ -150,6 +155,7 @@ function UpdateShoppingCart()
     cartAmount.innerHTML = cartSize
 }
 
+//Updates the total price
 function UpdatePrice()
 {
     var price = 0;
@@ -162,7 +168,8 @@ function UpdatePrice()
     priceTag.innerHTML = "Total Price: " + price.toString()
 }
 
-//Personal Details
+//Collection Personal Details
+//Tags to collect values
 var email = document.getElementById("email")
 var postalCode = document.getElementById("postal-code")
 var unitNumber = document.getElementById("unit-number")
@@ -180,6 +187,7 @@ cardNumber.value = localStorage.getItem("cardNumber")
 expiry.value = localStorage.getItem("expiry")
 cvv.value = localStorage.getItem("cvv")
 
+//Saving into the local storage
 function purchaseItems()
 {
     localStorage.setItem("Email", email.value)

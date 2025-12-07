@@ -27,17 +27,19 @@
 
         <!--Main Page-->
         <div class="cart-section">
-            <img src="media/merch_store_bg.jpg" id="cart-banner">
+            <img src="media/merch_store_bg.jpg" id="cart-banner" alt="Merch Banner">
             <div class="title-and-filters">
                 <h1>My Cart</h1>
             </div>
 
             <div id="cart-section">
+                <!--Place to create each item in cart-->
                 <div id="cart-catalogue">
                 </div>
                 <h1 id="total-price-title">Total Price: </h1>
                 <div id="payment-details">
                     <form id="payment">
+                        <!--Address and email address-->
                         <div id="personal-information">
                             <input id="email" type="email" placeholder="Email" required>
                             <div id="address">
@@ -45,10 +47,11 @@
                                 <input id="unit-number" type="text" placeholder="Unit-Number" required>
                             </div>
                         </div>
+                        <!--card info-->
                         <div id="card-information">
                             <input type="number" id="card-number" placeholder="Card Number" required>
                             <div id="cvv-and-expiry">
-                                <input id="expiry" type="date" placeholder="Expiry Date" required>
+                                <input id="expiry" type="date" required>
                                 <input id="cvv" type="number" placeholder="CVV" required>
                             </div>
                         </div>
@@ -84,6 +87,6 @@
                 </a>
             </div>
         </div>
+        <script src="merch/cart.js"></script>
     </body>
-    <script src="merch/cart.js"></script>
 </html>

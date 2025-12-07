@@ -27,23 +27,31 @@
 
         <!--Body-->
         <div class="main-content">
+            <!--Image and Album Infos-->
             <div class="title-and-image">
                 <div class="titles">
                     <h1 id="album-title"></h1>
                     <h2 id="album-subtitle"></h2>
                     <p id="album-description"></p>
-                </div>    
-                <img id="album-cover" src="">
+                </div>   
+                
+                <!--Will be filled with javascript-->
+                <img id="album-cover" src="" alt="album cover">
             </div>
             <div class="streaming-service">
                 <div class="stream-header">
                     <h1 id="stream-title">Stream Now!</h1>
                 </div>
+
+                <!--Button Links-->
                 <div class="stream-content">
                     <a id="album-youtube-link" href="" target="_blank"><img src="media/logos/logo_youtube.png" alt="Youtube Logo">Youtube</a>
                     <a id="album-spotify-link" href="" target="_blank"><img src="media/logos/logo_spotify.png" alt="Spotify Logo">Spotify</a>
                     <a id="album-apple-link" href="" target="_blank"><img src="media/logos/logo_apple.png" alt="Apple Logo">Apple</a>
                 </div>
+
+                <!-- Embedded content-->
+                <!--Will be filled with javascript all the src-->
                 <div class="embedded-content">
                     <iframe id="album-spotify-embbed" data-testid="embed-iframe" style="border-radius:12px" src="" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     <iframe id="album-youtube-embbed" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -78,6 +86,6 @@
                 </a>
             </div>
         </div>
+        <script src="album/album_info.js" type="module"></script>
     </body>
-    <script src="album/album_info.js" type="module"></script>
 </html>
