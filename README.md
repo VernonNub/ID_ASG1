@@ -81,7 +81,13 @@ Most css size used in this website's scale of viewport so the website looks rath
 
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- All texts from album_info page was taken from wikipedia specifically:
+  - https://en.wikipedia.org/wiki/Pieces_(EP)
+  - https://en.wikipedia.org/wiki/A_Flower_Bookmark_3
+  - https://en.wikipedia.org/wiki/The_Winning
+  - https://en.wikipedia.org/wiki/Lilac_(IU_album)
+- All purchase info is taken from the following link
+  - https://krmerchs.com/collections/iu?srsltid=AfmBOop2521H26xlGcgFreXq5J9fS9VGBrlpuihqV4-JunIdXJDGnGmM
 
 
 ### Media
