@@ -5,35 +5,35 @@ const merchDetails =
         Title: "IU 2026 Season's Greetings", 
         SubTitle: "$90.00",
         Description: "Release Date: 23/12/2025",
-        MerchImage: "../media/merch/iu_merch_2026_season's_greeting.png",
+        MerchImage: "media/merch/iu_merch_2026_season's_greeting.png",
     },
 
     FlowerBookmark3KeyRing: {
         Title: "IU Flower Bookmark 3:CDP Mini Keyring", 
         SubTitle: "$45.00",
         Description: "Release Date: unknown",
-        MerchImage: "../media/merch/iu_merch_flower_bookmark_3_keyring.png",
+        MerchImage: "media/merch/iu_merch_flower_bookmark_3_keyring.png",
     },
 
     FoundAtEight: {
         Title: "IU Found At Eight Pop Up Store List", 
         SubTitle: "$12.50",
         Description: "Release Date: unknown",
-        MerchImage: "../media/merch/iu_merch_found_at_eight_pop_up.png",
+        MerchImage: "media/merch/iu_merch_found_at_eight_pop_up.png",
     },
 
     MemoryOfTheWinning: {
         Title: "IU Memory Of The Winning", 
         SubTitle: "$65.00",
         Description: "Release Date: 11/9/2025",
-        MerchImage: "../media/merch/iu_merch_memory_of_the_winning.png",
+        MerchImage: "media/merch/iu_merch_memory_of_the_winning.png",
     },
 
     FlowerBookmark3Set: {
         Title: "IU Flower Bookmark 3 Set", 
         SubTitle: "$27.50",
         Description: "Release Date: 29/5/2025",
-        MerchImage: "../media/merch/iu_merch_flower_bookmark_3_set.png",
+        MerchImage: "media/merch/iu_merch_flower_bookmark_3_set.png",
     }
 }
 

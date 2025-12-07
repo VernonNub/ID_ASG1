@@ -18,11 +18,7 @@ function ChooseAlbum(num)
                     "Pieces", 
                     "LovePoem", 
                     "AFlowerBookmark2",
-                    "Palette", 
-                    "Chat-Shire", 
-                    "AFlowerBookmark1", 
-                    "LastFantasy", 
-                    "Real"];
+                    "Palette"];
 
 
     localStorage.setItem("chosenAlbum", albums[num]);
