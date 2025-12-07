@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width">
+        <title>Uaena Home Page</title>
+        <link type="text/css" rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <!-- Irina Serif font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <h3>IU (Li Ji-Eun)</h3>
+            <nav>
+                <a href="ID_ASG1/index.html">Home</a>
+                <a href="ID_ASG1/album.html">Albums</a>
+                <a href="ID_ASG1/merch.html">Merch</a>
+            </nav>
+        </div>
+
+        <!--Main Page-->
+        <div class="title">
+            <h1>IU (Li Ji-Eun) Korean Singer & Song writer</h1>
+            <p class="description">IU’s HEREH world tour, her first ever world tour</p>
+            <img src="media/iu_homepage_bg.png" alt="IU’s HEREH world tour, her first ever world tour">
+        </div>
+        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="single">
+                        <a id="bye-summer" href="https://youtu.be/Hsuy_xzPyWQ?si=ynoCHXmyYamRB6iB" target="_blank">
+                            <img src="media/singles/iu_single_bye_summer.jpg" alt="IU's newest single, Bye-Summer">
+                        </a>
+                        <h2>IU newest single “Bye, Summer” now out on streaming platforms</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="album">
+                        <a id="a-flower-3" href="https://youtube.com/playlist?list=OLAK5uy_lCczq7s8ViOF32GmTU6mIPvSTaSjqz-gs&si=2VewelPVhg0trW8W" target="_blank">
+                            <img src="media/album/2025_may27_album_a_flower_bookmark_3.jpg" alt="IU's newest album, A Flower Bookmark 3">
+                        </a>
+                        <h2>IU newest single “A Flower Bookmark 3" now out on streaming platforms</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="shows">
+                        <a id="bye-summer" href="https://www.netflix.com/us/title/81681535?s=i&trkid=258593161&vlang=en&trg=cp" target="_blank">
+                            <img src="media/shows/when-life-gives-tangerines.png" alt="IU's newest show, when life gives you tangerines">
+                        </a>
+                        <h2>IU newest show “When Life Gives You Tangerines" now out on Netflix</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="merch-shop">
+            <h2>IU Merchandise</h2>
+            <div class="home-merch-images">
+                <img id="season-greeting" alt="2026 Season's Greeting merch" src="media/merch/iu_merch_2026_season's_greeting.png">
+                <img id="hereh-dvd" alt="IU HEREH world tour dvd and blu-ray merch" src="media/merch/iu_merch_hereh_world_tour_dvd_blu-ray.png">
+                <img id="hereh" alt="IU HEREH world tour all merchs"src="media/merch/iu_merch_flower_bookmark_3_keyring.png">
+            </div>
+            <a href="/merch/merch.html">View Now</a>
+        </div>
+
+        <div class="sign-up">
+            <h1>Sign Up</h1>
+            <h2>Get Updates from IU</h2>
+            <form name="newsletter" id="newsletter">
+                <div class="form">
+                    <input id="email-input" type="email" placeholder="Email Address" required>
+                    <input id="phonenumber-input" type="number" placeholder="Phone Number" required>
+                </div>
+                <button id="newsletter-submit-button" type="button">Sign Up</button>
+            </form>
+            <img src="media/signup_bg.png" alt="lilac falling">
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="terms-and-service">
+                <a class="terms"><strong>Terms</strong></a>
+                <a class="privacy"><strong>Privacy</strong></a>
+                <a class="accessibility"><strong>Accessibility</strong></a>
+                <a class="cookies"><strong>Cookies</strong></a>
+            </div>
+            <div class="social-platforms">
+                <a class="facebook" href="https://www.facebook.com/iu.loen" target="_blank">
+                    <img src="../media/logos/logo_facebook.png" alt="facebook logo">
+                </a>
+                <a class="intagram" href="https://www.instagram.com/dlwlrma" target="_blank">
+                    <img src="../media/logos/logo_instagram.png" alt="instagram logo">
+                </a>
+                <a class="tiktok" href="https://www.tiktok.com/@_iuofficial" target="_blank">
+                    <img src="../media/logos/logo_tiktok.png" alt="tiktok logo">
+                </a>
+                <a class="twitter" href="https://x.com/_IUofficial" target="_blank">
+                    <img src="../media/logos/logo_twitter.png" alt="twitter logo">
+                </a>
+                <a class="youtube" href="https://www.youtube.com/@dlwlrma" target="_blank">
+                    <img src="../media/logos/logo_youtube.png" alt="youtube logo">
+                </a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </body>
+    <script src="home.js"></script>
+</html>
