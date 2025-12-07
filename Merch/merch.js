@@ -12,7 +12,7 @@ for (let i = 0; i < shopItems.length; i++)
 function ChooseMerch(num)
 {
     console.log(num)
-    const albums = ["2026SeasonGreeting", 
+    const albums = ["IU2026SeasonGreeting", 
                     "FoundAtEight", 
                     "FlowerBookmark3KeyRing", 
                     "MemoryOfTheWinning", 

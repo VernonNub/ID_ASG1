@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width">
+        <title>Uaena Home Page</title>
+        <link type="text/css" rel="stylesheet" href="../normalize.css">
+        <link rel="stylesheet" href="cart.css">
+
+        <!-- Irina Serif font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <h3>IU (Li Ji-Eun)</h3>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../album/album.html">Albums</a>
+                <a href="../shows/shows.html">Shows</a>
+                <a href="../merch/merch.html">Merch</a>
+                <a id="shopping-cart" href="cart.html"><img src="../media/logos/logo_shoppingcart.png" alt="Shopping Cart Logo"><span id="cart-amount">0</span></a>
+            </nav>
+        </div>
+
+        <!--Main Page-->
+        <div class="cart-section">
+            <img src="../Media/Merch_Store_BG.jpg" id="cart-banner">
+            <div class="title-and-filters">
+                <h1>My Cart</h1>
+            </div>
+
+            <div id="cart-section">
+                <div id="cart-catalogue">
+                </div>
+                <div id="payment-details">
+                    <form id="payment">
+                        <div id="personal-information">
+                            <input id="email" type="email" placeholder="Email" required>
+                            <div id="address">
+                                <input id="postal-code" type="number" placeholder="Postal-Code" required>
+                                <input id="unit-number" type="text" placeholder="Unit-Number" required>
+                            </div>
+                        </div>
+                        <div id="card-information">
+                            <input type="number" id="card-number" placeholder="Card Number" required>
+                            <div id="cvv-and-expiry">
+                                <input id="expiry" type="date" placeholder="Expiry Date" required>
+                                <input id="cvv" type="number" placeholder="CVV" required>
+                            </div>
+                        </div>
+                        <button id="purchase-button" type="button">Purchase</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="terms-and-service">
+                <a class="terms"><strong>Terms</strong></a>
+                <a class="privacy"><strong>Privacy</strong></a>
+                <a class="accessibility"><strong>Accessibility</strong></a>
+                <a class="cookies"><strong>Cookies</strong></a>
+            </div>
+            <div class="social-platforms">
+                <a class="facebook" href="https://www.facebook.com/iu.loen" target="_blank">
+                    <img src="../media/logos/logo_facebook.png" alt="facebook logo">
+                </a>
+                <a class="intagram" href="https://www.instagram.com/dlwlrma" target="_blank">
+                    <img src="../media/logos/logo_instagram.png" alt="instagram logo">
+                </a>
+                <a class="tiktok" href="https://www.tiktok.com/@_iuofficial" target="_blank">
+                    <img src="../media/logos/logo_tiktok.png" alt="tiktok logo">
+                </a>
+                <a class="twitter" href="https://x.com/_IUofficial" target="_blank">
+                    <img src="../media/logos/logo_twitter.png" alt="twitter logo">
+                </a>
+                <a class="youtube" href="https://www.youtube.com/@dlwlrma" target="_blank">
+                    <img src="../media/logos/logo_youtube.png" alt="youtube logo">
+                </a>
+            </div>
+        </div>
+    </body>
+    <script src="cart.js"></script>
+</html>

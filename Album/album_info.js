@@ -52,17 +52,17 @@ function LoadAlbumInformation(album)
     }
 
     //Changing Values based on the album
-    Tags.TitleTag.innerHTML = albumDetails[album].Title;
-    Tags.SubtitleTag.innerHTML = albumDetails[album].SubTitle;
-    Tags.DescriptionTag.innerHTML = albumDetails[album].Description;
-    Tags.ImageTag.src = albumDetails[album].AlbumCover;
-    Tags.YoutubeLinkTag.href = albumDetails[album].YoutubeLink;
-    Tags.SpotifyLinkTag.href = albumDetails[album].SpotifyLink;
-    Tags.AppleLinkTag.href = albumDetails[album].AppleLink;
-    Tags.SpotifyEmTag.src = albumDetails[album].SpotifyEm;
-    Tags.YoutubeEmTag.src = albumDetails[album].YoutubeEm;
-    Tags.AppleEmTag.src = albumDetails[album].AppleEm;
-    Tags.BackgroundTag[0].style.backgroundColor = albumDetails[album].BackgroundColor;
+    Tags.TitleTag.innerHTML = merchDetails[album].Title;
+    Tags.SubtitleTag.innerHTML = merchDetails[album].SubTitle;
+    Tags.DescriptionTag.innerHTML = merchDetails[album].Description;
+    Tags.ImageTag.src = merchDetails[album].AlbumCover;
+    Tags.YoutubeLinkTag.href = merchDetails[album].YoutubeLink;
+    Tags.SpotifyLinkTag.href = merchDetails[album].SpotifyLink;
+    Tags.AppleLinkTag.href = merchDetails[album].AppleLink;
+    Tags.SpotifyEmTag.src = merchDetails[album].SpotifyEm;
+    Tags.YoutubeEmTag.src = merchDetails[album].YoutubeEm;
+    Tags.AppleEmTag.src = merchDetails[album].AppleEm;
+    Tags.BackgroundTag[0].style.backgroundColor = merchDetails[album].BackgroundColor;
 }
 
 LoadAlbumInformation(album2Load)
